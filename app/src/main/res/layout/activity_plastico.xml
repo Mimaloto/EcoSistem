@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="add"
+    tools:context=".Plastico">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plastico" />
+
+    <Button
+        android:id="@+id/buttonPlast"
+        android:layout_width="149dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="516dp"
+        android:layout_marginBottom="418dp"
+        android:background="#2C45D3"
+        android:backgroundTint="#2237AE"
+        android:cursorVisible="false"
+        android:defaultFocusHighlightEnabled="false"
+        android:text="Plastico"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="0sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/texvplas"
+        android:layout_width="151dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="242dp"
+        android:background="#CDEFE8E8"
+        android:gravity="center"
+        android:hint="Cantidad en Kg"
+        android:textAlignment="center"
+        android:textColor="#171616"
+        android:textColorHint="#2B2626"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="136dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginBottom="36dp"
+        android:adjustViewBounds="false"
+        android:background="#8BFFFFFF"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/texvplas"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/th__1_" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

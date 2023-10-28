@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollIndicators="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ecosistem" />
+
+    <TextView
+        android:id="@+id/TextviewRCor"
+        android:layout_width="165dp"
+        android:layout_height="31dp"
+        android:background="#C8FFFFFF"
+        android:hint="Correo"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollHorizontally="false"
+        android:textAlignment="center"
+        android:textColorHint="#0B0B0B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textviewRContraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <TextView
+        android:id="@+id/textviewRContraseña"
+        android:layout_width="165dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="16dp"
+        android:background="#C8FFFFFF"
+        android:hint="Contraseña"
+        android:textAlignment="center"
+        android:textColorHint="#101010"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/texvolvdc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/texvolvdc"
+        android:layout_width="159dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="80dp"
+        android:background="#C8FFFFFF"
+        android:backgroundTint="#9CFFFFFF"
+        android:hint="¿Olvidaste tu contraseña?"
+        android:textAlignment="center"
+        android:textColorHint="#101010"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnins"
+        android:layout_width="186dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="168dp"
+        android:allowUndo="false"
+        android:backgroundTint="#0727DC"
+        android:checkable="false"
+        android:cursorVisible="false"
+        android:defaultFocusHighlightEnabled="false"
+        android:elegantTextHeight="false"
+        android:text="Iniciar Sesion"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#6E1313" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
