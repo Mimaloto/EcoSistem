@@ -5,71 +5,228 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTintMode="add"
-    tools:context=".Plastico">
+    tools:context=".PlasticoActivity">
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scrollIndicators="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ecosistem" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-155dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Plastico"
+            android:textAlignment="center"
+            android:textColor="#082318"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginTop="320dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#87F1BC"
+                android:text="Cantidad"
+                android:textAlignment="center"
+                android:textColor="#081E17"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPasticoQuantity"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#87F1BC"
+                android:ems="10"
+                android:hint="Peso"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="#042313"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="#87F1BC"
+            android:text="Precio"
+            android:textAlignment="center"
+            android:textColor="#081E17"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPricePlastico"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#87F1BC"
+            android:ems="10"
+            android:hint="Pesos Colombianos"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="320dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="#87F1BC"
+            android:text="Mes"
+            android:textAlignment="center"
+            android:textColor="#081E17"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/epinnerMonthPlastico"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#87F1BC"
+            android:entries="@array/months"
+            android:popupElevation="10dp"
+            android:scrollbarSize="6dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegisterPlastico"
+        android:layout_width="212dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="500dp"
+        android:layout_weight="0.6"
+        android:backgroundTint="#87F1BC"
+        android:text="Registrar Plastico"
+        android:textColor="#05160E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:icon="@drawable/baseline_folder_24"
+        app:iconTint="#221F1F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="640dp"
+        android:background="#94604019"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/plastico" />
+        app:layout_constraintVertical_bias="0.26">
 
-    <Button
-        android:id="@+id/buttonPlast"
-        android:layout_width="149dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="516dp"
-        android:layout_marginBottom="418dp"
-        android:background="#2C45D3"
-        android:backgroundTint="#2237AE"
-        android:cursorVisible="false"
-        android:defaultFocusHighlightEnabled="false"
-        android:text="Plastico"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:cornerRadius="0sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        <Button
+            android:id="@+id/btnretunplast"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:layout_weight="1"
+            android:background="#02FFFFFF"
+            android:maxHeight="80dp"
+            android:text="Atras"
+            android:textColor="#86F0BB"
+            app:icon="@drawable/baseline_arrow_back_24"
+            app:iconSize="35dp"
+            app:iconTint="#86F0BB" />
 
-    <TextView
-        android:id="@+id/texvplas"
-        android:layout_width="151dp"
-        android:layout_height="31dp"
-        android:layout_marginBottom="242dp"
-        android:background="#CDEFE8E8"
-        android:gravity="center"
-        android:hint="Cantidad en Kg"
-        android:textAlignment="center"
-        android:textColor="#171616"
-        android:textColorHint="#2B2626"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/btnhomeplast"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#03FFFFFF"
+            android:maxHeight="80dp"
+            android:text="Inicio"
+            android:textColor="#86F0BB"
+            app:icon="@drawable/baseline_home_24"
+            app:iconSize="35dp"
+            app:iconTint="#86F0BB" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="136dp"
-        android:layout_height="111dp"
-        android:layout_marginTop="312dp"
-        android:layout_marginBottom="36dp"
-        android:adjustViewBounds="false"
-        android:background="#8BFFFFFF"
-        android:cropToPadding="false"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/texvplas"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView4"
-        app:srcCompat="@drawable/th__1_" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:layout_weight="1"
+            android:background="#027DE51A"
+            android:text="Next"
+            android:textColor="#86F0BB"
+            app:icon="@drawable/baseline_arrow_forward_24"
+            app:iconSize="35dp"
+            app:iconTint="#86F0BB" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

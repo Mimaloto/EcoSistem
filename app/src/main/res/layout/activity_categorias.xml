@@ -20,53 +20,106 @@
 
     <Button
         android:id="@+id/btnplast"
-        android:layout_width="149dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="252dp"
-        android:layout_marginBottom="418dp"
-        android:background="#2C45D3"
-        android:backgroundTint="#2237AE"
-        android:cursorVisible="false"
-        android:defaultFocusHighlightEnabled="false"
+        android:layout_width="212dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#87F1BC"
         android:text="Plastico"
+        android:textColor="#05160E"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:cornerRadius="0sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:icon="@drawable/baseline_liquor_24"
+        app:iconPadding="15dp"
+        app:iconTint="#0C0C0C"
+        app:layout_constraintBottom_toTopOf="@+id/btnpapel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.66"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnvidr"
-        android:layout_width="149dp"
-        android:layout_height="61dp"
+        android:layout_width="209dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="156dp"
+        android:backgroundTint="#87F1BC"
         android:text="Vidrio"
+        android:textColor="#05160E"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:cornerRadius="0dp"
+        app:icon="@drawable/baseline_aspect_ratio_24"
+        app:iconTint="#222020"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.66"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786" />
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnpapel"
-        android:layout_width="149dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="384dp"
-        android:layout_marginBottom="144dp"
+        android:layout_width="212dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#87F1BC"
         android:text="Papel"
+        android:textColor="#05160E"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnvidr"
+        app:icon="@drawable/baseline_folder_24"
+        app:iconTint="#221F1F"
+        app:layout_constraintBottom_toTopOf="@+id/btnvidr"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="640dp"
+        android:background="#94604019"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView21"
+        app:layout_constraintVertical_bias="0.26">
+
+        <Button
+            android:id="@+id/btnretunplast"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:layout_weight="1"
+            android:background="#02FFFFFF"
+            android:maxHeight="80dp"
+            android:text="Atras"
+            android:textColor="#86F0BB"
+            app:icon="@drawable/baseline_arrow_back_24"
+            app:iconSize="35dp"
+            app:iconTint="#86F0BB" />
+
+        <Button
+            android:id="@+id/btnhomeplast"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#03FFFFFF"
+            android:maxHeight="80dp"
+            android:text="Inicio"
+            android:textColor="#86F0BB"
+            app:icon="@drawable/baseline_home_24"
+            app:iconSize="35dp"
+            app:iconTint="#86F0BB" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:layout_weight="1"
+            android:background="#027DE51A"
+            android:text="Next"
+            android:textColor="#86F0BB"
+            app:icon="@drawable/baseline_arrow_forward_24"
+            app:iconSize="35dp"
+            app:iconTint="#86F0BB" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,16 +13,31 @@
         android:theme="@style/Theme.EcoSistem"
         tools:targetApi="31">
         <activity
+            android:name=".PapelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".registrarse"
+            android:exported="false" />
+        <activity
+            android:name=".Consejos"
+            android:exported="false" />
+        <activity
+            android:name=".Estadisticas"
+            android:exported="false" />
+        <activity
+            android:name=".Registrar"
+            android:exported="false" />
+        <activity
             android:name=".VidrioActivity2"
             android:exported="false" />
         <activity
             android:name=".PapelActivity2"
             android:exported="false" />
         <activity
-            android:name=".RegistrarUsuarioActivity2"
+            android:name=".RegistrarUsuarioActivity"
             android:exported="false" />
         <activity
-            android:name=".Plastico"
+            android:name=".PlasticoActivity"
             android:exported="false" />
         <activity
             android:name=".Categorias"
