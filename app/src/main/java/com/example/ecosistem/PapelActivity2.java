@@ -62,8 +62,8 @@ public class PapelActivity2 extends AppCompatActivity {
                     int pricePapel = Integer.parseInt(price.getText().toString());
                     String monthPapel = month.getSelectedItem().toString();
                     String serial = idUser + monthPapel;
-                    Papel reciclerPapel = new Papel(serial,quantityPapel,pricePapel,monthPapel, idUser);
-                    registerPapel(reciclerPapel);
+                    Papel registerPapel = new Papel(serial,quantityPapel,pricePapel,monthPapel, idUser);
+                    registerPapel(registerPapel);
                     Toast.makeText(getApplicationContext(), "Registro exitoso",
                             Toast.LENGTH_SHORT).show();
                     cleanView();

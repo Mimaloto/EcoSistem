@@ -4,22 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Categorias">
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/pantalla_de_categorias" />
+    android:background="@drawable/ecosistem"
+    tools:context=".CategoriasActivity">
 
     <Button
-        android:id="@+id/btnplast"
+        android:id="@+id/btnplastico"
         android:layout_width="212dp"
         android:layout_height="57dp"
         android:layout_marginBottom="80dp"
@@ -37,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnvidr"
+        android:id="@+id/btnvidrio"
         android:layout_width="209dp"
         android:layout_height="66dp"
         android:layout_marginBottom="156dp"
@@ -65,7 +54,7 @@
         android:textStyle="bold"
         app:icon="@drawable/baseline_folder_24"
         app:iconTint="#221F1F"
-        app:layout_constraintBottom_toTopOf="@+id/btnvidr"
+        app:layout_constraintBottom_toTopOf="@+id/btnvidrio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent" />
@@ -79,11 +68,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView21"
         app:layout_constraintVertical_bias="0.26">
 
         <Button
-            android:id="@+id/btnretunplast"
+            android:id="@+id/btnretuncatego"
             android:layout_width="wrap_content"
             android:layout_height="91dp"
             android:layout_weight="1"
@@ -96,7 +84,7 @@
             app:iconTint="#86F0BB" />
 
         <Button
-            android:id="@+id/btnhomeplast"
+            android:id="@+id/btnhomecatego"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ecosistem"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="ConsejosActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tus Recomendaciones"
+                android:textAlignment="center"
+                android:textColor="#28CF29"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:id="@+id/cvPlastico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                app:cardBackgroundColor="#99FFFFFF">
+
+                <com.google.android.material.circularreveal.CircularRevealLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#8A1E88E5"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivPlastico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvPlastico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Plastico"
+                        android:textColor="#052214"
+                        android:textSize="24sp"
+                        android:textStyle="italic" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvPlasticoDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Clasifica tus residuos: separá los plásticos de otros materiales como papel, vidrio y metal. Utiliza contenedores de reciclaje específicos para plástico.
+Limpia los envases: asegurate de lavar y enjuagar los envases de plástico antes de reciclarlos para evitar contaminantes.
+"
+                        android:textColor="#ECF1EC"
+
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btMorePlastico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:text="Conoce más"
+                        android:textSize="16sp"
+                        app:backgroundTint="#3F51B5" />
+                </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:id="@+id/cvPapel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                app:cardBackgroundColor="#B9D39191">
+
+                <com.google.android.material.circularreveal.CircularRevealLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#52D39191"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivPapel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvpapel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Papel"
+                        android:textColor="#081C16"
+                        android:textSize="24sp"
+                        android:textStyle="italic" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvPapelDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Se separa y se clasifica el vidrio por color y elementos.
+Se retira todo el material diferente al vidrio."
+                        android:textColor="#EADEDE"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btMorePapel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:text="Conoce más"
+                        android:textSize="16sp"
+                        app:backgroundTint="#3F51B5" />
+
+                </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:id="@+id/cvVidrio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                app:cardBackgroundColor="#5E813E29">
+
+                <com.google.android.material.circularreveal.CircularRevealLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#DF813E29"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivVidrio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvVidrio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Vidrio"
+                        android:textColor="#E8DBDB"
+                        android:textSize="24sp"
+                        android:textStyle="italic" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvVidrioDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:text="La energía es un recurso que debe de utilizarse de forma conciente para la eficiencia energética, mira más concejos."
+                        android:textColor="#E6D8D8"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btMorevidrio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:text="Conoce más"
+                        android:textSize="16sp"
+                        app:backgroundTint="#3F51B5" />
+
+                </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

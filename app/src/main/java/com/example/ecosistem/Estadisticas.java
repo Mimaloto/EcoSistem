@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 public class Estadisticas extends AppCompatActivity {
 
-    Button bntretunestadj,btnhomeej,btnconsej;
+    Button bntretunestadj,btnhomeej,btnconsej,more;
     TextView totalVidrio,totalPapel,totalPlastico,total_Pay,
             max_vidrio_month,max_papel_month,max_plastico_month,
             max_vidrio_quantity,max_papel_quantity,max_plastico_quantity;
@@ -32,8 +32,8 @@ public class Estadisticas extends AppCompatActivity {
         setContentView(R.layout.activity_estadisticas);
 
         btnconsej=findViewById(R.id.button);
-        btnhomeej=findViewById(R.id.btnhomeplast);
-        bntretunestadj=findViewById(R.id.btnretunplast);
+        btnhomeej=findViewById(R.id.btnhomeestadis);
+        bntretunestadj=findViewById(R.id.btnretunestadis);
         totalVidrio=findViewById(R.id.textViewTotalVidrio);
         totalPapel=findViewById(R.id.textViewTotalPapel);
         totalPlastico=findViewById(R.id.textViewTotalPlastico);
@@ -44,12 +44,24 @@ public class Estadisticas extends AppCompatActivity {
         max_vidrio_quantity=findViewById(R.id.textViewMaxVidrioQuantity);
         max_papel_quantity=findViewById(R.id.textViewMaxPapelQuantity);
         max_plastico_quantity=findViewById(R.id.textViewMaxPlasticoQuantity);
+        more=findViewById(R.id.btnMore);
+        Intent receive= getIntent();
+        String idUser= receive.getStringExtra("idUser");
         Intent btnconse=new Intent(getApplicationContext(),
-                Consejos.class);
+                ConsejosActivity.class);
         Intent btnhomee=new Intent(getApplicationContext(),
                 PrincipalActivity.class);
         Intent btnretunestad=new Intent(getApplicationContext(),
-                Categorias.class);
+                CategoriasActivity.class);
+        Intent moreStatistics=new Intent(getApplicationContext(),
+                MoreStatisticsActivity.class);
+        moreStatistics.putExtra("idUser",idUser);
+        more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(moreStatistics);
+            }
+        });
         btnconsej.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,7 +84,7 @@ public class Estadisticas extends AppCompatActivity {
 
         File vidrio=new File(getFilesDir(),"vidrio.txt");
         File papel=new File(getFilesDir(),"papel.txt");
-        File plastico=new File(getFilesDir(),"plasticotxt");
+        File plastico=new File(getFilesDir(),"plastico.txt");
 
         ArrayList<Vidrio> list_vidrio= list_Vidrio(vidrio,idUser);
         ArrayList<Papel> list_papel= list_Papel(papel,idUser);
@@ -148,7 +160,7 @@ public class Estadisticas extends AppCompatActivity {
                     total += i.getQuantity();
                     if (max < i.getQuantity()) {
                         max = i.getQuantity();
-                        month = i.getMonth();
+                        month = i.getMoth();
                     }
                 }
                 totalPlastico.setText(total + " L");

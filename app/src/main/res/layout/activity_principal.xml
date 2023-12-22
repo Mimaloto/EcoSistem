@@ -4,20 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ecosistem"
     tools:context=".PrincipalActivity">
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:scrollIndicators="top"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ecosistem" />
 
     <Button
         android:id="@+id/btncat"
@@ -40,7 +28,6 @@
         android:id="@+id/btncons"
         android:layout_width="221dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="200dp"
         android:backgroundTint="#87F1BC"
         android:text="Consejos"
         android:textColor="#05160E"
@@ -49,9 +36,12 @@
         app:icon="@drawable/baseline_lightbulb_24"
         app:iconPadding="10dp"
         app:iconTint="#191717"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnestadisp"
+        app:layout_constraintVertical_bias="0.378" />
 
     <Button
         android:id="@+id/btnestadisp"
@@ -82,7 +72,7 @@
         app:layout_constraintVertical_bias="0.26">
 
         <Button
-            android:id="@+id/btnretunplast"
+            android:id="@+id/btnretunprinci"
             android:layout_width="wrap_content"
             android:layout_height="91dp"
             android:layout_weight="1"
@@ -95,7 +85,7 @@
             app:iconTint="#86F0BB" />
 
         <Button
-            android:id="@+id/btnhomeplast"
+            android:id="@+id/btnhomeprinci"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"

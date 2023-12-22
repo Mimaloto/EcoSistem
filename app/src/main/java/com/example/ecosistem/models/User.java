@@ -1,25 +1,16 @@
-﻿package com.example.ecosistem.models;
+package com.example.ecosistem.models;
 
 public class User {
     private final String ID;
     private String name,email,phone,password;
 
-    public User(String id, String name, String email, String phone, String password) {
-        this.ID = id;
-        this.name = name;
-        this.email = email;
-        this.phone = phone;
-        this.password = password;
-    }
-
-    public String getId() {
+    public String getID() {
         return ID;
     }
 
     public String getName() {
         return name;
     }
-
 
     public void setName(String name) {
         this.name = name;
@@ -48,5 +39,18 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public User(String ID, String name, String email, String phone, String password) {
+        this.ID = ID;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
+
+    }
+
+    {
+    }
 }
+
 

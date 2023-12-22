@@ -5,20 +5,8 @@ public class Papel {
     private int quantity,price;
     private String month,idUser;
 
-    public Papel(String SERIAL, int quantity, int price, String month,String idUser) {
-        this.SERIAL = SERIAL;
-        this.idUser = idUser;
-        this.quantity = quantity;
-        this.price = price;
-        this.month = month;
-    }
-
     public String getSERIAL() {
         return SERIAL;
-    }
-
-    public String getIdUser() {
-        return idUser;
     }
 
     public int getQuantity() {
@@ -43,5 +31,22 @@ public class Papel {
 
     public void setMonth(String month) {
         this.month = month;
+    }
+
+    public String getIdUser() {
+        return idUser;
+    }
+
+    public void setIdUser(String idUser) {
+        this.idUser = idUser;
+    }
+
+    public Papel(String SERIAL, int quantity, int price, String month, String idUser) {
+        this.SERIAL = SERIAL;
+        this.quantity = quantity;
+        this.price = price;
+        this.month = month;
+        this.idUser = idUser;
+
     }
 }

@@ -9,23 +9,23 @@ import android.widget.Button;
 
 public class PrincipalActivity extends AppCompatActivity {
 
-    Button btncatj,btnretunpaj,btnestadisticaspj,btnconsj,btnnextpj;
+    Button btncatj,btnretunpaj,btnestadisticaspj,btnconsj,btnhomeprinci;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
-        btnnextpj=findViewById(R.id.button);
+        btnhomeprinci=findViewById(R.id.btnhomeprinci);
         btncatj=findViewById(R.id.btncat);
-        btnretunpaj=findViewById(R.id.btnretunplast);
+        btnretunpaj=findViewById(R.id.btnretunprinci);
         btnestadisticaspj=findViewById(R.id.btnestadisp);
         btnconsj=findViewById(R.id.btncons);
 
         Intent nextp=new Intent(getApplicationContext(),
-                Consejos.class);
+                MainActivity.class);
         Intent cons=new Intent(getApplicationContext(),
-                Consejos.class);
+                ConsejosActivity.class);
 
         Intent estadisticasp=new Intent(getApplicationContext(),
                 Estadisticas.class);
@@ -34,8 +34,8 @@ public class PrincipalActivity extends AppCompatActivity {
                 MainActivity.class);
 
         Intent cat=new Intent(getApplicationContext(),
-                Categorias.class);
-        btnnextpj.setOnClickListener(new View.OnClickListener() {
+                CategoriasActivity.class);
+        btnhomeprinci.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(nextp);

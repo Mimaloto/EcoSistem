@@ -13,20 +13,21 @@
         android:theme="@style/Theme.EcoSistem"
         tools:targetApi="31">
         <activity
-            android:name=".PapelActivity"
+            android:name=".ConsejosActivity"
             android:exported="false" />
         <activity
-            android:name=".registrarse"
+            android:name=".MoreStatisticsActivity"
             android:exported="false" />
         <activity
-            android:name=".Consejos"
+            android:name=".CategoriasActivity"
             android:exported="false" />
+
+
+
         <activity
             android:name=".Estadisticas"
             android:exported="false" />
-        <activity
-            android:name=".Registrar"
-            android:exported="false" />
+
         <activity
             android:name=".VidrioActivity2"
             android:exported="false" />
@@ -39,9 +40,7 @@
         <activity
             android:name=".PlasticoActivity"
             android:exported="false" />
-        <activity
-            android:name=".Categorias"
-            android:exported="false" />
+
         <activity
             android:name=".PrincipalActivity"
             android:exported="false" />

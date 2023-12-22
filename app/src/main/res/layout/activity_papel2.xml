@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ecosistem"
     tools:context=".PapelActivity2">
 
     <ImageView
@@ -153,7 +154,7 @@
             android:entries="@array/months"
             android:popupElevation="10dp"
             android:scrollbarSize="6dp"
-            tools:ignore="TouchTargetSizeCheck"/>
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
 

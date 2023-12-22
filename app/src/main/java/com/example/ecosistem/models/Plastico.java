@@ -3,22 +3,10 @@ package com.example.ecosistem.models;
 public class Plastico {
     private final String SERIAL;
     private int quantity,price;
-    private String month,idUser;
-
-    public Plastico(String SERIAL, int quantity,int price,String month,String idUser) {
-        this.SERIAL = SERIAL;
-        this.idUser = idUser;
-        this.quantity = quantity;
-        this.price = price;
-        this.month = month;
-    }
+    private String moth,idUser;
 
     public String getSERIAL() {
         return SERIAL;
-    }
-
-    public String getIdUser() {
-        return idUser;
     }
 
     public int getQuantity() {
@@ -37,11 +25,28 @@ public class Plastico {
         this.price = price;
     }
 
-    public String getMonth() {
-        return month;
+    public String getMoth() {
+        return moth;
     }
 
-    public void setMonth(String month) {
-        this.month = month;
+    public void setMoth(String moth) {
+        this.moth = moth;
+    }
+
+    public String getIdUser() {
+        return idUser;
+    }
+
+    public void setIdUser(String idUser) {
+        this.idUser = idUser;
+    }
+
+    public Plastico(String SERIAL, int quantity, int price, String moth, String idUser) {
+        this.SERIAL = SERIAL;
+        this.quantity = quantity;
+        this.price = price;
+        this.moth = moth;
+        this.idUser = idUser;
+
     }
 }

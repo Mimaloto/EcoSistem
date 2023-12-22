@@ -64,8 +64,8 @@ public class VidrioActivity2 extends AppCompatActivity {
                     int priceVidrio= Integer.parseInt(price.getText().toString());
                     String monthVidrio= month.getSelectedItem().toString();
                     String serial= idUser+monthVidrio;
-                    Vidrio reciclerVidrio= new Vidrio(serial,quantityVidrio,priceVidrio,monthVidrio,idUser);
-                    registerVidrio(reciclerVidrio);
+                    Vidrio registerVidrio= new Vidrio(serial,quantityVidrio,priceVidrio,monthVidrio,idUser);
+                    registerVidrio(registerVidrio);
                     Toast.makeText(getApplicationContext(), "Registro Exitoso",
                             Toast.LENGTH_SHORT).show();
                     cleanView();

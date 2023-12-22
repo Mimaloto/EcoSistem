@@ -40,7 +40,7 @@ public class PlasticoActivity extends AppCompatActivity {
         Intent btnhomepla=new Intent(getApplicationContext(),
                 PrincipalActivity.class);
         Intent btnretunplas=new Intent(getApplicationContext(),
-                Categorias.class);
+                CategoriasActivity.class);
 
 
         btnhomeplasj.setOnClickListener(new View.OnClickListener() {
@@ -64,8 +64,8 @@ public class PlasticoActivity extends AppCompatActivity {
                                     int pricePlastico = Integer.parseInt(price.getText().toString());
                                     String monthPlastico = month.getSelectedItem().toString();
                                     String serial = idUser + monthPlastico;
-                                    Plastico reciclerPlastico =new Plastico(serial,quantityPlastico,pricePlastico,monthPlastico,idUser);
-                                    registerPlastico(reciclerPlastico);
+                                    Plastico registerPlastico =new Plastico(serial,quantityPlastico,pricePlastico,monthPlastico,idUser);
+                                    registerPlastico(registerPlastico);
                                     Toast.makeText(getApplicationContext(), "Registro exitoso",
                                             Toast.LENGTH_SHORT).show();
                                     cleanView();
@@ -84,7 +84,7 @@ public class PlasticoActivity extends AppCompatActivity {
                                         recicler.getSERIAL()+","+
                                                 recicler.getQuantity()+","+
                                                 recicler.getPrice()+","+
-                                                recicler.getMonth()+","+
+                                                recicler.getMoth()+","+
                                                 recicler.getIdUser()
                                 );
                                 bufferedWriter.newLine();

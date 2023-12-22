@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         emailacj = findViewById(R.id.ediTextemailac);
         passwordacj = findViewById(R.id.ediTextpasswordac);
 
-        Intent categorias=new Intent(getApplicationContext(),
-                Categorias.class);
+        Intent principal_activity=new Intent(getApplicationContext(),
+                PrincipalActivity.class);
 
 
         Intent btncrearct = new Intent(getApplicationContext(),
@@ -73,9 +73,8 @@ public class MainActivity extends AppCompatActivity {
                                 i.getPhone().equals(userLogin)) {
                             state = true;
                             if (i.getPassword().equals(passwordacj.getText().toString())) {
-
-                                categorias.putExtra("idUser", i.getId());
-                                startActivity(categorias);
+                                principal_activity.putExtra("idUser", i.getID());
+                                startActivity(principal_activity);
                                 break;
                             } else {
                                 Toast.makeText(getApplicationContext(),

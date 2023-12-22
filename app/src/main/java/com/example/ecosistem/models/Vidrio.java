@@ -5,14 +5,6 @@ public class Vidrio {
     private int quantity,price;
     private String month,idUser;
 
-    public Vidrio(String SERIAL, int quantity, int price, String month, String idUser) {
-        this.SERIAL = SERIAL;
-        this.quantity = quantity;
-        this.price = price;
-        this.month = month;
-        this.idUser = idUser;
-    }
-
     public String getSERIAL() {
         return SERIAL;
     }
@@ -47,5 +39,14 @@ public class Vidrio {
 
     public void setIdUser(String idUser) {
         this.idUser = idUser;
+    }
+
+    public Vidrio(String SERIAL, int quantity, int price, String month, String idUser) {
+        this.SERIAL = SERIAL;
+        this.quantity = quantity;
+        this.price = price;
+        this.month = month;
+        this.idUser = idUser;
+
     }
 }
